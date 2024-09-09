@@ -1,0 +1,58 @@
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: whitesmoke;
+    }
+
+    .body{
+      background-color: gray;
+      padding: 10% 1rem;
+      margin: 5rem auto 1rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 21em;
+    }
+
+    .console{
+      height: 5rem;
+      width: 100%;
+      background-color: rgb(54, 75, 46);
+      margin: auto;
+      margin-bottom: 1rem;
+      font-size: 50px;
+      font-weight: 900;
+      text-align: right;
+      color: black;
+      padding-inline: 6px;
+    }
+
+    .button{
+      display: flex;
+      gap: 1em;
+      margin: auto;
+    }
+
+    button{
+      width: 3em;
+      height: 2.5em;
+      background-color: black;
+      color: whitesmoke;
+      font-size: 20px;
+      font-weight: 900;
+      border: none;
+      box-shadow: 4px 4px 4px silver;
+      cursor: pointer;
+    }
+
+    #admin{
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* <!---------------------- Powered by Alesh ----------------------> */

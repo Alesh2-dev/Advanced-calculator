@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="body">
+
+    <input class="console" type="text">
+
+    <div class="button">
+    
+      <button style="background-color: red;" onclick="
+      updateCalculator('AC');
+      if (calculation === '') {
+            
+            number = calculation;
+            
+        }
+      display ();
+      localStorage.setItem('calculation', calculation);
+        ">
+        AC
+      </button>
+    
+      <button onclick="
+      updateCalculator('OFF');
+      display ();
+        ">
+        OFF
+      </button>
+    
+      <button onclick="
+        updateCalculator('C');
+        display ();
+        ">
+        C
+      </button>
+  
+      <button onclick="
+      updateCalculator('ON');
+      display ();
+        ">
+        ON
+      </button>
+    </div>
+
+    <div class="button">
+    
+      <button onclick="
+        updateCalculator ('1');
+        display ();
+        ">
+        1
+      </button>
+    
+      <button onclick="
+        updateCalculator ('2');
+        display ();
+        ">
+        2
+      </button>
+    
+      <button onclick="
+        updateCalculator ('3');
+        display ();
+        ">
+        3
+      </button>
+  
+      <button onclick="
+        updateCalculator ('*');
+        display ();
+        ">
+        x
+      </button>
+    </div>
+  
+    <div class="button">
+    
+      <button onclick="
+        updateCalculator ('4');
+        display ();
+        ">
+        4
+      </button>
+    
+      <button onclick="
+        updateCalculator ('5');
+        display ();
+        ">
+        5
+      </button>
+    
+      <button onclick="
+        updateCalculator ('6');
+        display ();
+        ">
+        6
+      </button>
+  
+      <button onclick="
+        updateCalculator ('/');
+        display ();
+        ">
+        /
+      </button>
+    </div>
+  
+    <div class="button">
+    
+      <button onclick="
+        updateCalculator ('7');
+        display ();
+        ">
+        7
+      </button>
+    
+      <button onclick="
+        updateCalculator ('8');
+        display ();
+        ">
+        8
+      </button>
+    
+      <button onclick="
+        updateCalculator ('9');
+        display ();
+        ">
+        9
+      </button>
+  
+      <button onclick="
+        updateCalculator ('-');
+        display ();
+        ">
+        -
+      </button>
+    </div>
+  
+    <div class="button">
+    
+      <button onclick="
+        updateCalculator ('00');
+        display ();
+        ">
+        00
+      </button>
+    
+      <button onclick="
+        updateCalculator ('0');
+        display ();
+        ">
+        0
+      </button>
+    
+      <button onclick="
+        updateCalculator ('+');
+        display ();
+        ">
+        +
+      </button>
+  
+      <button class="equal" onclick="
+        if (calculation === '') {
+            
+            number = calculation;
+            
+        } else {
+        
+        calculation = eval(calculation);
+        }
+        
+        display ();
+      ">
+        =
+      </button>
+    </div>
+
+    <p id="admin"><i>Powered by Alesh</i></p>
+  </div>
+
+  <script src="main.js"></script>
+
+  <!---------------------- Powered by Alesh ----------------------> 
+</body>
+</html>
